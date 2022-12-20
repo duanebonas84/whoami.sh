@@ -1,9 +1,6 @@
 #!/bin/bash
- 
-clear
-echo "Hello $USER"
-echo "Today is \c ";date
-echo "Number of user login : \c" ; who | wc -l
-echo "Calendar"
-cal
-exit 0
+
+_user="$(id -u -n)"
+_uid="$(id -u)"
+echo "User name : $_user"
+echo "User name ID (UID) : $_uid"
